@@ -6,8 +6,13 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 class ExchangeRatesViewModel: ObservableObject {
-    @Published var model: ExchangeRates?
+    @Published var model: ExchangeRates? {
+        didSet {
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+    }
     let networkService = NetworkService()
 }

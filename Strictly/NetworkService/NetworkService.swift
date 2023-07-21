@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WidgetKit
 
 class NetworkService {
     func getURL(from: String) -> URL? {
@@ -53,7 +54,8 @@ class NetworkService {
             }
 
             guard let result = result else { return print("Ошибка парсинга") }
-            return completion(result)
+            completion(result)
+            WidgetCenter.shared.reloadAllTimelines()
         }.resume()
 
     }

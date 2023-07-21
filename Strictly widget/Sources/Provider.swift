@@ -26,10 +26,7 @@ struct Provider: TimelineProvider {
         completion: @escaping (WidgetEntry) -> ()
     ) {
         viewModel.networkService.getExchangeRates(from: сurrency) { data in
-            let entry = WidgetEntry(
-                date: Date(),
-                data: data
-            )
+            let entry = WidgetEntry(date: .now, data: data)
             completion(entry)
         }
     }
@@ -38,22 +35,10 @@ struct Provider: TimelineProvider {
         in context: Context,
         completion: @escaping (Timeline<WidgetEntry>) -> ()
     ) {
-        guard let targetDate = Calendar.current.date(
-            byAdding: .second,
-            value: 60,
-            to: Date()
-        ) else { return print("Неверная дата")}
-
         viewModel.networkService.getExchangeRates(from: сurrency) { data in
-            let timeline = Timeline(
-                entries: [
-                    WidgetEntry(
-                        date: Date(),
-                        data: data
-                    )
-                ],
-                policy: .after(targetDate)
-            )
+            let entry = WidgetEntry(date: .now, data: data)
+            let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 1, to: .now) ?? Date()
+            let timeline = Timeline(entries: [entry], policy: .after(nextUpdateDate))
             completion(timeline)
         }
     }
