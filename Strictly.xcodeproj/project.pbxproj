@@ -11,7 +11,45 @@
 		C11356FF2A6AF4020030ABB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11356FE2A6AF4020030ABB0 /* ContentView.swift */; };
 		C11357012A6AF4050030ABB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11357002A6AF4050030ABB0 /* Assets.xcassets */; };
 		C11357042A6AF4050030ABB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11357032A6AF4050030ABB0 /* Preview Assets.xcassets */; };
+		C11357112A6AF4790030ABB0 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11357102A6AF4790030ABB0 /* WidgetKit.framework */; };
+		C11357132A6AF4790030ABB0 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11357122A6AF4790030ABB0 /* SwiftUI.framework */; };
+		C11357162A6AF4790030ABB0 /* Strictly_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357152A6AF4790030ABB0 /* Strictly_widgetBundle.swift */; };
+		C113571A2A6AF47C0030ABB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11357192A6AF47C0030ABB0 /* Assets.xcassets */; };
+		C113571E2A6AF47C0030ABB0 /* Strictly widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C113570E2A6AF4790030ABB0 /* Strictly widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C11357242A6AF55C0030ABB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357232A6AF55C0030ABB0 /* NetworkService.swift */; };
+		C11357252A6AF55C0030ABB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357232A6AF55C0030ABB0 /* NetworkService.swift */; };
+		C11357292A6AF59B0030ABB0 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357272A6AF59B0030ABB0 /* ExchangeRates.swift */; };
+		C113572B2A6AF5C00030ABB0 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113572A2A6AF5C00030ABB0 /* WidgetEntry.swift */; };
+		C113572E2A6AF5F70030ABB0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113572D2A6AF5F70030ABB0 /* ViewModel.swift */; };
+		C11357302A6AF60E0030ABB0 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113572F2A6AF60E0030ABB0 /* Provider.swift */; };
+		C11357322A6AF62B0030ABB0 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357312A6AF62B0030ABB0 /* Widget.swift */; };
+		C11357342A6AF66C0030ABB0 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357332A6AF66C0030ABB0 /* WidgetView.swift */; };
+		C11357352A6AF7BB0030ABB0 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357272A6AF59B0030ABB0 /* ExchangeRates.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C113571C2A6AF47C0030ABB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C11356F12A6AF4020030ABB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C113570D2A6AF4790030ABB0;
+			remoteInfo = "Strictly widgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C11357222A6AF47C0030ABB0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C113571E2A6AF47C0030ABB0 /* Strictly widgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C11356F92A6AF4020030ABB0 /* Strictly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strictly.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +57,19 @@
 		C11356FE2A6AF4020030ABB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C11357002A6AF4050030ABB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C11357032A6AF4050030ABB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C113570E2A6AF4790030ABB0 /* Strictly widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Strictly widgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11357102A6AF4790030ABB0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C11357122A6AF4790030ABB0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C11357152A6AF4790030ABB0 /* Strictly_widgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strictly_widgetBundle.swift; sourceTree = "<group>"; };
+		C11357192A6AF47C0030ABB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C113571B2A6AF47C0030ABB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C11357232A6AF55C0030ABB0 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C11357272A6AF59B0030ABB0 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
+		C113572A2A6AF5C00030ABB0 /* WidgetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntry.swift; sourceTree = "<group>"; };
+		C113572D2A6AF5F70030ABB0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C113572F2A6AF60E0030ABB0 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		C11357312A6AF62B0030ABB0 /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		C11357332A6AF66C0030ABB0 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +80,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C113570B2A6AF4790030ABB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11357132A6AF4790030ABB0 /* SwiftUI.framework in Frameworks */,
+				C11357112A6AF4790030ABB0 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				C11356FB2A6AF4020030ABB0 /* Strictly */,
+				C11357142A6AF4790030ABB0 /* Strictly widget */,
+				C113570F2A6AF4790030ABB0 /* Frameworks */,
 				C11356FA2A6AF4020030ABB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C11356F92A6AF4020030ABB0 /* Strictly.app */,
+				C113570E2A6AF4790030ABB0 /* Strictly widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +114,7 @@
 		C11356FB2A6AF4020030ABB0 /* Strictly */ = {
 			isa = PBXGroup;
 			children = (
+				C11357262A6AF5720030ABB0 /* NetworkService */,
 				C11356FC2A6AF4020030ABB0 /* StrictlyApp.swift */,
 				C11356FE2A6AF4020030ABB0 /* ContentView.swift */,
 				C11357002A6AF4050030ABB0 /* Assets.xcassets */,
@@ -67,6 +131,47 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C113570F2A6AF4790030ABB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11357102A6AF4790030ABB0 /* WidgetKit.framework */,
+				C11357122A6AF4790030ABB0 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C11357142A6AF4790030ABB0 /* Strictly widget */ = {
+			isa = PBXGroup;
+			children = (
+				C11357152A6AF4790030ABB0 /* Strictly_widgetBundle.swift */,
+				C113572C2A6AF5E00030ABB0 /* Model */,
+				C113572D2A6AF5F70030ABB0 /* ViewModel.swift */,
+				C113572F2A6AF60E0030ABB0 /* Provider.swift */,
+				C11357312A6AF62B0030ABB0 /* Widget.swift */,
+				C11357332A6AF66C0030ABB0 /* WidgetView.swift */,
+				C11357192A6AF47C0030ABB0 /* Assets.xcassets */,
+				C113571B2A6AF47C0030ABB0 /* Info.plist */,
+			);
+			path = "Strictly widget";
+			sourceTree = "<group>";
+		};
+		C11357262A6AF5720030ABB0 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				C11357232A6AF55C0030ABB0 /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		C113572C2A6AF5E00030ABB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C11357272A6AF59B0030ABB0 /* ExchangeRates.swift */,
+				C113572A2A6AF5C00030ABB0 /* WidgetEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +182,34 @@
 				C11356F52A6AF4020030ABB0 /* Sources */,
 				C11356F62A6AF4020030ABB0 /* Frameworks */,
 				C11356F72A6AF4020030ABB0 /* Resources */,
+				C11357222A6AF47C0030ABB0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C113571D2A6AF47C0030ABB0 /* PBXTargetDependency */,
 			);
 			name = Strictly;
 			productName = Strictly;
 			productReference = C11356F92A6AF4020030ABB0 /* Strictly.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C113570D2A6AF4790030ABB0 /* Strictly widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C113571F2A6AF47C0030ABB0 /* Build configuration list for PBXNativeTarget "Strictly widgetExtension" */;
+			buildPhases = (
+				C113570A2A6AF4790030ABB0 /* Sources */,
+				C113570B2A6AF4790030ABB0 /* Frameworks */,
+				C113570C2A6AF4790030ABB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Strictly widgetExtension";
+			productName = "Strictly widgetExtension";
+			productReference = C113570E2A6AF4790030ABB0 /* Strictly widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +222,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					C11356F82A6AF4020030ABB0 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					C113570D2A6AF4790030ABB0 = {
 						CreatedOnToolsVersion = 14.3;
 					};
 				};
@@ -116,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				C11356F82A6AF4020030ABB0 /* Strictly */,
+				C113570D2A6AF4790030ABB0 /* Strictly widgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +258,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C113570C2A6AF4790030ABB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C113571A2A6AF47C0030ABB0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +273,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11357352A6AF7BB0030ABB0 /* ExchangeRates.swift in Sources */,
 				C11356FF2A6AF4020030ABB0 /* ContentView.swift in Sources */,
+				C11357242A6AF55C0030ABB0 /* NetworkService.swift in Sources */,
 				C11356FD2A6AF4020030ABB0 /* StrictlyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C113570A2A6AF4790030ABB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C11357292A6AF59B0030ABB0 /* ExchangeRates.swift in Sources */,
+				C11357162A6AF4790030ABB0 /* Strictly_widgetBundle.swift in Sources */,
+				C11357302A6AF60E0030ABB0 /* Provider.swift in Sources */,
+				C11357322A6AF62B0030ABB0 /* Widget.swift in Sources */,
+				C11357252A6AF55C0030ABB0 /* NetworkService.swift in Sources */,
+				C113572B2A6AF5C00030ABB0 /* WidgetEntry.swift in Sources */,
+				C11357342A6AF66C0030ABB0 /* WidgetView.swift in Sources */,
+				C113572E2A6AF5F70030ABB0 /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C113571D2A6AF47C0030ABB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C113570D2A6AF4790030ABB0 /* Strictly widgetExtension */;
+			targetProxy = C113571C2A6AF47C0030ABB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C11357052A6AF4050030ABB0 /* Debug */ = {
@@ -262,6 +423,7 @@
 		C11357082A6AF4050030ABB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -273,8 +435,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,15 +445,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.Strictly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C11357092A6AF4050030ABB0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,8 +469,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +479,66 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.Strictly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C11357202A6AF47C0030ABB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD67T552T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Strictly widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Strictly widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.my.Strictly.Strictly-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C11357212A6AF47C0030ABB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD67T552T3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Strictly widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Strictly widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.my.Strictly.Strictly-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -334,6 +559,15 @@
 			buildConfigurations = (
 				C11357082A6AF4050030ABB0 /* Debug */,
 				C11357092A6AF4050030ABB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C113571F2A6AF47C0030ABB0 /* Build configuration list for PBXNativeTarget "Strictly widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C11357202A6AF47C0030ABB0 /* Debug */,
+				C11357212A6AF47C0030ABB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
