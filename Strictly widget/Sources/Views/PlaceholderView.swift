@@ -13,7 +13,7 @@ struct PlaceholderView: View {
             Rectangle()
                 .foregroundColor(.clear)
                 .frame(width: 155, height: 155)
-                .background(.white)
+                .background(Color("bgColor"))
                 .cornerRadius(22)
             VStack(alignment: .leading) {
                 HStack(spacing: 12) {
@@ -23,7 +23,7 @@ struct PlaceholderView: View {
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 32, height: 10)
-                        .background(Color(red: 0.82, green: 0.84, blue: 0.83))
+                        .background(Color("skeletColor"))
                         .cornerRadius(12)
                 }
                 .frame(maxWidth: .infinity, alignment: .topLeading)
@@ -34,13 +34,13 @@ struct PlaceholderView: View {
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 84, height: 24)
-                        .background(Color(red: 0.82, green: 0.84, blue: 0.83))
+                        .background(Color("skeletColor"))
                         .cornerRadius(12)
 
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: 32, height: 12)
-                        .background(Color(red: 0.82, green: 0.84, blue: 0.83))
+                        .background(Color("skeletColor"))
                         .cornerRadius(12)
                 }
             }

@@ -9,7 +9,7 @@ import WidgetKit
 import SwiftUI
 
 struct WidgetRUBtoUSD: Widget {
-    let kind: String = "WidgetRUBtoUSD"
+    let kind = "WidgetRUBtoUSD"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(
@@ -25,7 +25,7 @@ struct WidgetRUBtoUSD: Widget {
 }
 
 struct WidgetRUBtoEUR: Widget {
-    let kind: String = "WidgetRUBtoEUR"
+    let kind = "WidgetRUBtoEUR"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(
@@ -41,7 +41,7 @@ struct WidgetRUBtoEUR: Widget {
 }
 
 struct WidgetRUBtoAED: Widget {
-    let kind: String = "WidgetRUBtoAED"
+    let kind = "WidgetRUBtoAED"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(
@@ -59,9 +59,9 @@ struct WidgetRUBtoAED: Widget {
 struct Widget_Previews: PreviewProvider {
     static var previews: some View {
         WidgetView(entry: WidgetEntry(date: Date(), data: nil))
-        .previewContext(WidgetPreviewContext(family: .systemSmall))
-        .environment(\.colorScheme, .light)
-        .redacted(reason: .placeholder)
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .environment(\.colorScheme, .light)
+            .redacted(reason: .placeholder)
     }
 }
 

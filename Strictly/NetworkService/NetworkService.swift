@@ -32,31 +32,36 @@ class NetworkService {
 
     func getExchangeRates(
         from currency: String,
-        completion: @escaping (ExchangeRates) -> Void
+        completion: @escaping (Result<ExchangeRates, Error>) -> Void
     ) {
         let url = getURL(from: currency)
-        guard let url = url else {
-            return print("Ошибка URL")
+        guard let url = url
+        else {
+            completion(.failure(NetworkError.invalidURL))
+            return
         }
 
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard error == nil else { return print("ERROR") }
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200,
-                  let data = data
-            else { return }
-
-            var result: ExchangeRates?
-
-            do {
-                result = try JSONDecoder().decode(ExchangeRates.self, from: data)
-            } catch {
-                print("Ошибка парсинга")
+            guard error == nil else {
+                completion(.failure(NetworkError.networkError))
+                return
             }
 
-            guard let result = result else { return print("Ошибка парсинга") }
-            completion(result)
-            WidgetCenter.shared.reloadAllTimelines()
-        }.resume()
+            guard let response = response as? HTTPURLResponse,
+                  response.statusCode == 200,
+                  let data = data
+            else {
+                completion(.failure(NetworkError.invalidResponse))
+                return
+            }
 
-    }
+            do {
+                let result = try JSONDecoder().decode(ExchangeRates.self, from: data)
+                completion(.success(result))
+                WidgetCenter.shared.reloadAllTimelines()
+            } catch {
+                completion(.failure(NetworkError.parsingError))
+            }
+        }.resume()
+    } 
 }

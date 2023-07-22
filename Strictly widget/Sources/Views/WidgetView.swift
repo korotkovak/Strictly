@@ -13,12 +13,14 @@ struct WidgetView: View {
     @Environment(\.redactionReasons) private var reasons
 
     var body: some View {
-        if reasons.isEmpty {
+        if entry.data == nil || !reasons.isEmpty {
+            PlaceholderView()
+        } else {
             ZStack {
                 Rectangle()
                     .foregroundColor(.clear)
                     .frame(width: 155, height: 155)
-                    .background(.white)
+                    .background(Color("bgColor"))
                     .cornerRadius(22)
                 VStack(alignment: .leading) {
                     HStack(spacing: 12) {
@@ -28,10 +30,10 @@ struct WidgetView: View {
                         VStack(alignment: .leading, spacing: 2) {
                             Text(entry.data?.base ?? "USD")
                                 .font(Font.system(size: 12).bold())
-                                .foregroundColor(Color(red: 0.26, green: 0.26, blue: 0.26))
+                                .foregroundColor(Color("titleColor"))
                             Text("24 hours")
                                 .font(Font.system(size: 10))
-                                .foregroundColor(Color(red: 0.61, green: 0.61, blue: 0.61))
+                                .foregroundColor(Color("subtitleColor"))
                         }
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                     }
@@ -50,16 +52,15 @@ struct WidgetView: View {
                                 .frame(width: 16, height: 28)
                                 .padding(.top, 5)
                         }
+                        
                         Text("—")
                             .font(Font.system(size: 14).bold())
-                            .foregroundColor(Color(red: 0.61, green: 0.61, blue: 0.61))
+                            .foregroundColor(Color("subtitleColor"))
                     }
                 }
                 .padding(.horizontal, 16)
                 .padding(.vertical, 20)
             }
-        } else {
-            PlaceholderView()
         }
     }
 }
