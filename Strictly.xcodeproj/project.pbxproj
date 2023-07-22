@@ -28,7 +28,6 @@
 		C11357372A6B08A80030ABB0 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357362A6B08A80030ABB0 /* PlaceholderView.swift */; };
 		C113573B2A6C2B010030ABB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113573A2A6C2B010030ABB0 /* NetworkError.swift */; };
 		C113573C2A6C2E6D0030ABB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113573A2A6C2B010030ABB0 /* NetworkError.swift */; };
-		C11357402A6C50040030ABB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11357192A6AF47C0030ABB0 /* Assets.xcassets */; };
 		C11357452A6C564B0030ABB0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357442A6C564B0030ABB0 /* Storage.swift */; };
 		C11357462A6C564B0030ABB0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357442A6C564B0030ABB0 /* Storage.swift */; };
 /* End PBXBuildFile section */
@@ -282,7 +281,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C11357042A6AF4050030ABB0 /* Preview Assets.xcassets in Resources */,
-				C11357402A6C50040030ABB0 /* Assets.xcassets in Resources */,
 				C11357012A6AF4050030ABB0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

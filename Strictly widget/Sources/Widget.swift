@@ -60,8 +60,7 @@ struct Widget_Previews: PreviewProvider {
     static var previews: some View {
         WidgetView(entry: WidgetEntry(date: Date(), data: nil))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
-            .environment(\.colorScheme, .light)
-            .redacted(reason: .placeholder)
+            .environment(\.colorScheme, .dark)
     }
 }
 

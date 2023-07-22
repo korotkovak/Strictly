@@ -1,39 +1,39 @@
 {
   "images" : [
     {
+      "filename" : "img_signs_RUB-2.svg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
       "filename" : "img_signs_RUB.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "img_signs_RUB-2 1.svg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
       "appearances" : [
         {
           "appearance" : "luminosity",
           "value" : "dark"
         }
       ],
-      "filename" : "img_signs_RUB 3.svg",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
       "filename" : "img_signs_RUB 1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "filename" : "img_signs_RUB 4.svg",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "filename" : "img_signs_RUB 2.svg",
+      "filename" : "img_signs_RUB-2 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     },
@@ -44,7 +44,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "img_signs_RUB 5.svg",
+      "filename" : "img_signs_RUB 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
