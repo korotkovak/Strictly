@@ -28,8 +28,6 @@
 		C11357372A6B08A80030ABB0 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357362A6B08A80030ABB0 /* PlaceholderView.swift */; };
 		C113573B2A6C2B010030ABB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113573A2A6C2B010030ABB0 /* NetworkError.swift */; };
 		C113573C2A6C2E6D0030ABB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113573A2A6C2B010030ABB0 /* NetworkError.swift */; };
-		C11357452A6C564B0030ABB0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357442A6C564B0030ABB0 /* Storage.swift */; };
-		C11357462A6C564B0030ABB0 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357442A6C564B0030ABB0 /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +75,6 @@
 		C11357332A6AF66C0030ABB0 /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 		C11357362A6B08A80030ABB0 /* PlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderView.swift; sourceTree = "<group>"; };
 		C113573A2A6C2B010030ABB0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		C11357442A6C564B0030ABB0 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +119,6 @@
 		C11356FB2A6AF4020030ABB0 /* Strictly */ = {
 			isa = PBXGroup;
 			children = (
-				C11357442A6C564B0030ABB0 /* Storage.swift */,
 				C11357262A6AF5720030ABB0 /* NetworkService */,
 				C11356FC2A6AF4020030ABB0 /* StrictlyApp.swift */,
 				C11356FE2A6AF4020030ABB0 /* ContentView.swift */,
@@ -263,6 +259,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = C11356F02A6AF4020030ABB0;
 			productRefGroup = C11356FA2A6AF4020030ABB0 /* Products */;
@@ -301,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C113573B2A6C2B010030ABB0 /* NetworkError.swift in Sources */,
-				C11357452A6C564B0030ABB0 /* Storage.swift in Sources */,
 				C11357352A6AF7BB0030ABB0 /* ExchangeRates.swift in Sources */,
 				C11356FF2A6AF4020030ABB0 /* ContentView.swift in Sources */,
 				C11357242A6AF55C0030ABB0 /* NetworkService.swift in Sources */,
@@ -317,7 +313,6 @@
 				C11357162A6AF4790030ABB0 /* Strictly_widgetBundle.swift in Sources */,
 				C11357302A6AF60E0030ABB0 /* Provider.swift in Sources */,
 				C11357322A6AF62B0030ABB0 /* Widget.swift in Sources */,
-				C11357462A6C564B0030ABB0 /* Storage.swift in Sources */,
 				C11357252A6AF55C0030ABB0 /* NetworkService.swift in Sources */,
 				C113572B2A6AF5C00030ABB0 /* WidgetEntry.swift in Sources */,
 				C11357342A6AF66C0030ABB0 /* WidgetView.swift in Sources */,

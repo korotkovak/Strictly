@@ -28,12 +28,6 @@ struct Provider: TimelineProvider {
         viewModel.networkService.getExchangeRates(from: сurrency) { result in
             switch result {
             case .success(let data):
-//                if !(viewModel.localStorage?.isExchangeRateSetInUserDefaults() ?? false) {
-//                    let value = data.result.first?.value
-//                    viewModel.localStorage?.save(value, for: "ExchangeRates")
-//                    viewModel.localStorage?.setInUserDefaults()
-//                }
-                
                 let entry = WidgetEntry(date: .now, data: data)
                 completion(entry)
             case .failure(_):
@@ -50,12 +44,6 @@ struct Provider: TimelineProvider {
         viewModel.networkService.getExchangeRates(from: сurrency) { result in
             switch result {
             case .success(let data):
-//                if !(viewModel.localStorage?.isExchangeRateSetInUserDefaults() ?? false) {
-//                    let value = data.result.first?.value
-//                    viewModel.localStorage?.save(value, for: "ExchangeRates")
-//                    viewModel.localStorage?.setInUserDefaults()
-//                }
-
                 let entry = WidgetEntry(date: .now, data: data)
                 let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 1, to: .now) ?? Date()
                 let timeline = Timeline(entries: [entry], policy: .after(nextUpdateDate))

@@ -10,6 +10,7 @@ import WidgetKit
 
 struct WidgetView: View {
     var entry: WidgetEntry
+//    @StateObject var viewModel = ExchangeRatesViewModel()
     @Environment(\.redactionReasons) private var reasons
 
     var body: some View {
@@ -52,8 +53,7 @@ struct WidgetView: View {
                                 .frame(width: 16, height: 28)
                                 .padding(.top, 5)
                         }
-                        
-                        Text("—")
+                        Text("_")
                             .font(Font.system(size: 14).bold())
                             .foregroundColor(Color("subtitleColor"))
                     }
