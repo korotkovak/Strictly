@@ -10,7 +10,7 @@ import WidgetKit
 
 struct WidgetView: View {
     var entry: WidgetEntry
-//    @StateObject var viewModel = ExchangeRatesViewModel()
+    @StateObject private var viewModel = ExchangeRatesViewModel()
     @Environment(\.redactionReasons) private var reasons
 
     var body: some View {
@@ -53,9 +53,9 @@ struct WidgetView: View {
                                 .frame(width: 16, height: 28)
                                 .padding(.top, 5)
                         }
-                        Text("_")
+
+                        displayVolatility(currency: "\(entry.data?.base ?? "USD")")
                             .font(Font.system(size: 14).bold())
-                            .foregroundColor(Color("subtitleColor"))
                     }
                 }
                 .padding(.horizontal, 16)
@@ -79,5 +79,46 @@ extension WidgetView {
         )
 
         return AttributedString(attributedString)
+    }
+
+    func displayVolatility(currency: String) -> Text {
+        let currentRate: Float
+        let initialRate: Float
+
+        switch currency {
+        case "USD":
+            currentRate = entry.data?.result.first?.value ?? 99.0
+            initialRate = viewModel.initialUSD
+        case "EUR":
+            currentRate = entry.data?.result.first?.value ?? 99.0
+            initialRate = viewModel.initialEUR
+        case "AED":
+            currentRate = entry.data?.result.first?.value ?? 99.0
+            initialRate = viewModel.initialAED
+        default:
+            return Text("N/A")
+        }
+
+        let volatility = viewModel.calculateVolatility(
+            initialRate: initialRate,
+            currentRate: currentRate
+        )
+
+        let sign: String
+        let color: Color
+
+        if volatility == 0.0 {
+            sign = ""
+            color = Color("subtitleColor")
+        } else if volatility > 0.0 {
+            sign = "+"
+            color = Color("upColor")
+        } else {
+            sign = "-"
+            color = Color("downColor")
+        }
+
+        return Text(String(format: "%@%.2f%%", sign, abs(volatility)))
+            .foregroundColor(color)
     }
 }

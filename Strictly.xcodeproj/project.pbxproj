@@ -16,7 +16,6 @@
 		C11357162A6AF4790030ABB0 /* Strictly_widgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357152A6AF4790030ABB0 /* Strictly_widgetBundle.swift */; };
 		C113571A2A6AF47C0030ABB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C11357192A6AF47C0030ABB0 /* Assets.xcassets */; };
 		C113571E2A6AF47C0030ABB0 /* Strictly widgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C113570E2A6AF4790030ABB0 /* Strictly widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C11357242A6AF55C0030ABB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357232A6AF55C0030ABB0 /* NetworkService.swift */; };
 		C11357252A6AF55C0030ABB0 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357232A6AF55C0030ABB0 /* NetworkService.swift */; };
 		C11357292A6AF59B0030ABB0 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357272A6AF59B0030ABB0 /* ExchangeRates.swift */; };
 		C113572B2A6AF5C00030ABB0 /* WidgetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113572A2A6AF5C00030ABB0 /* WidgetEntry.swift */; };
@@ -24,9 +23,7 @@
 		C11357302A6AF60E0030ABB0 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113572F2A6AF60E0030ABB0 /* Provider.swift */; };
 		C11357322A6AF62B0030ABB0 /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357312A6AF62B0030ABB0 /* Widget.swift */; };
 		C11357342A6AF66C0030ABB0 /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357332A6AF66C0030ABB0 /* WidgetView.swift */; };
-		C11357352A6AF7BB0030ABB0 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357272A6AF59B0030ABB0 /* ExchangeRates.swift */; };
 		C11357372A6B08A80030ABB0 /* PlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11357362A6B08A80030ABB0 /* PlaceholderView.swift */; };
-		C113573B2A6C2B010030ABB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113573A2A6C2B010030ABB0 /* NetworkError.swift */; };
 		C113573C2A6C2E6D0030ABB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C113573A2A6C2B010030ABB0 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
@@ -119,7 +116,6 @@
 		C11356FB2A6AF4020030ABB0 /* Strictly */ = {
 			isa = PBXGroup;
 			children = (
-				C11357262A6AF5720030ABB0 /* NetworkService */,
 				C11356FC2A6AF4020030ABB0 /* StrictlyApp.swift */,
 				C11356FE2A6AF4020030ABB0 /* ContentView.swift */,
 				C11357002A6AF4050030ABB0 /* Assets.xcassets */,
@@ -177,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				C11357152A6AF4790030ABB0 /* Strictly_widgetBundle.swift */,
+				C11357262A6AF5720030ABB0 /* NetworkService */,
 				C113572C2A6AF5E00030ABB0 /* Model */,
 				C11357392A6B09430030ABB0 /* Views */,
 				C113572D2A6AF5F70030ABB0 /* ViewModel.swift */,
@@ -297,10 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C113573B2A6C2B010030ABB0 /* NetworkError.swift in Sources */,
-				C11357352A6AF7BB0030ABB0 /* ExchangeRates.swift in Sources */,
 				C11356FF2A6AF4020030ABB0 /* ContentView.swift in Sources */,
-				C11357242A6AF55C0030ABB0 /* NetworkService.swift in Sources */,
 				C11356FD2A6AF4020030ABB0 /* StrictlyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
