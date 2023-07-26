@@ -45,12 +45,24 @@ struct Provider: TimelineProvider {
             switch result {
             case .success(let data):
                 let entry = WidgetEntry(date: .now, data: data)
-                let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 1, to: .now) ?? Date()
+
+                let nextUpdateDate = Calendar.current.date(
+                    byAdding: .minute,
+                    value: 1,
+                    to: .now
+                ) ?? Date()
+
                 let timeline = Timeline(entries: [entry], policy: .after(nextUpdateDate))
                 completion(timeline)
             case .failure(_):
                 let entry = WidgetEntry(date: .now, data: nil)
-                let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 1, to: .now) ?? Date()
+
+                let nextUpdateDate = Calendar.current.date(
+                    byAdding: .minute,
+                    value: 1,
+                    to: .now
+                ) ?? Date()
+
                 let timeline = Timeline(entries: [entry], policy: .after(nextUpdateDate))
                 completion(timeline)
             }

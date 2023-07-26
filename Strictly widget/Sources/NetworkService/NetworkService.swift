@@ -8,25 +8,23 @@
 import Foundation
 import WidgetKit
 
-class NetworkService {
-    func getURL(from: String) -> URL? {
+final class NetworkService {
+    private func getURL(from: String) -> URL? {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.fastforex.io"
         components.path = "/fetch-one"
 
         let apiKey = "ba8d8c06b1-56a3bbbaca-ry3apa"
-        let baseCurrency = "RUB"
+        let basicCurrency = "RUB"
 
         let queryItemApiKey = URLQueryItem(name: "api_key", value: apiKey)
-        let queryItemBaseCurrency = URLQueryItem(name: "from", value: from)
-        let queryItemSymbols = URLQueryItem(name: "to", value: baseCurrency)
+        let queryItemBasicCurrency = URLQueryItem(name: "from", value: from)
+        let queryItemSymbols = URLQueryItem(name: "to", value: basicCurrency)
 
         components.queryItems = [queryItemApiKey,
-                                 queryItemBaseCurrency,
+                                 queryItemBasicCurrency,
                                  queryItemSymbols]
-
-
         return components.url
     }
 
@@ -42,7 +40,8 @@ class NetworkService {
         }
 
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard error == nil else {
+            guard error == nil
+            else {
                 completion(.failure(NetworkError.networkError))
                 return
             }
@@ -63,5 +62,5 @@ class NetworkService {
                 completion(.failure(NetworkError.parsingError))
             }
         }.resume()
-    } 
+    }
 }

@@ -58,9 +58,19 @@ struct WidgetRUBtoAED: Widget {
 
 struct Widget_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetView(entry: WidgetEntry(date: Date(), data: ExchangeRates(base: "USD", result: ["RUB" : 16.03], updated: "", ms: 2)))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
-            .environment(\.colorScheme, .light)
+        WidgetView(
+            entry: WidgetEntry(
+                date: Date(),
+                data: ExchangeRates(
+                    base: "USD",
+                    result: ["RUB" : 10.03],
+                    updated: "",
+                    ms: 2
+                )
+            )
+        )
+        .previewContext(WidgetPreviewContext(family: .systemSmall))
+        .environment(\.colorScheme, .light)
     }
 }
 
