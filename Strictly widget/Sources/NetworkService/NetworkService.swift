@@ -15,7 +15,7 @@ final class NetworkService {
         components.host = "api.fastforex.io"
         components.path = "/fetch-one"
 
-        let apiKey = "ba8d8c06b1-56a3bbbaca-ry3apa"
+        let apiKey = "b54d6826a6-23707d3a95-ryi8p9"
         let basicCurrency = "RUB"
 
         let queryItemApiKey = URLQueryItem(name: "api_key", value: apiKey)
